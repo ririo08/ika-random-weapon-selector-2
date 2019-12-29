@@ -1,0 +1,57 @@
+@charset "UTF-8";
+.top {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.top-h1 {
+  font-size: 24px;
+  color: green;
+  margin: 10px 0;
+}
+
+.top-detail {
+  margin-top: 0;
+}
+
+.targetBox-Flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.targetImg {
+  width: 100px;
+  height: 100px;
+}
+
+.targetTitle {
+  color: white;
+  margin: auto 0;
+  margin-left: 15px;
+  height: 1.5em;
+  font-size: 1.8em;
+  width: calc(100% - 100px);
+  text-shadow: black 2px 0px, black -2px 0px, black 0px -2px, black 0px 2px, black 2px 2px, black -2px 2px, black 2px -2px, black -2px -2px, black 1px 2px, black -1px 2px, black 1px -2px, black -1px -2px, black 2px 1px, black -2px 1px, black 2px -1px, black -2px -1px;
+}
+
+.targetButton {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8;
+  /*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+
+.targetButton:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  /*下に動く*/
+  border-bottom: none;
+  /*線を消す*/
+}
