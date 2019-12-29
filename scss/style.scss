@@ -3,7 +3,7 @@
     margin: 0 auto;
     &-h1 {
         font-size: 24px;
-        color: green;
+        color: black;
         margin: 10px 0;
     }
     &-detail {
@@ -14,6 +14,7 @@
 .targetBox {
     &-Flexbox {
         display: flex;
+        margin: 30px 0;
     }
 }
 
