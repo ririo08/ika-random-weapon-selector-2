@@ -1,20 +1,58 @@
+@font-face {
+    font-family: Splatoon1;
+    src: url(/fonts/ab3ec448c2439eaed33fcf7f31b70b33.woff2) format("woff2"), url(/fonts/bundled/8ef269f47a5843f5b280f318f31762e4.woff) format("woff")
+}
+
+@font-face {
+    font-family: Splatoon1;
+    src: url(/fonts/0e12b13c359d4803021dc4e17cecc311.woff2) format("woff2"), url(/fonts/bundled/f25982b8ab52a929938cd63f15656ecf.woff) format("woff")
+}
+
+@font-face {
+    font-family: Splatoon2;
+    src: url(/fonts/da3c7139972a0e4e47dd8de4cacea984.woff2) format("woff2"), url(/fonts/bundled/28c8555a5e4f84408ad27225abc5b731.woff) format("woff")
+}
+
+@font-face {
+    font-family: Splatoon2;
+    src: url(/fonts/eb82d017016045bf998cade4dac1ec22.woff2) format("woff2"), url(/fonts/bundled/b4fab2f6ac35a758f6aeb5b7054ab121.woff) format("woff")
+}
+
 .top {
-    width: 600px;
-    margin: 0 auto;
+    background-image: url(../img/pageImg/bgimg.png);
+    background-size: 50%;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &-h1 {
         font-size: 24px;
         color: black;
-        margin: 10px 0;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        text-align: center;
+        transform:rotate(-2deg);
     }
     &-detail {
         margin-top: 0;
+        text-align: center;
+        transform:rotate(-2deg);
     }
+}
+
+.wrapper {
+    background-color: white;
+    width: 600px;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 .targetBox {
     &-Flexbox {
         display: flex;
-        margin: 30px 0;
+        margin: 50px 0;
     }
 }
 
@@ -46,18 +84,20 @@
     black 2px 1px,
     black -2px 1px,
     black 2px -1px,
-    black -2px -1px;
+    black -2px -1px,
+    #6b6b6b 4px 4px 6px;
 }
 
 .targetButton {
-    margin-top: 20px;
+    margin-top: 50px;
     display: inline-block;
     padding: 0.5em 1em;
     text-decoration: none;
-    background: #668ad8;
+    font-weight: bold;
+    background: #f02d7d;
     /*ボタン色*/
     color: #FFF;
-    border-bottom: solid 4px #627295;
+    border-bottom: solid 4px #fc5fa0;
     border-radius: 3px;
     &:active {
         /*ボタンを押したとき*/
@@ -65,6 +105,41 @@
         transform: translateY(4px);
         /*下に動く*/
         border-bottom: none;
+        margin-bottom: 4px;
         /*線を消す*/
+    }
+}
+
+.context {
+    margin-top: 150px;
+}
+
+.shareBox {
+    display: flex;
+    margin-left: 5px;
+    margin-bottom: 10px;
+
+    &-twitterShare {
+        display: block;
+        height: 40px;
+        width: 120px;
+    }
+
+    &-twitter {
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin-top: -4px;
+        margin-left: 10px;
+        color: #a51ee1;
+    }
+
+    &-github {
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin-top: -4px;
+        margin-left: 10px;
+        color: #a51ee1;
     }
 }
